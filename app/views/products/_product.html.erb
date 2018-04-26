@@ -1,5 +1,15 @@
 <article class="product">
   <header>
+   
+    <%if product.sould_out?%>
+     <aside class="price" style="margin-right: 68.5%; border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 0%;
+       border-top-right-radius: 0%;
+        border-top-left-radius: 6.5%">
+    <span class="label label-danger">SOULD OUT!</span>
+     </aside>
+    <%end%>
+   
     <%= link_to product do %>
       <%= image_tag product.image.thumb, alt: product.name %>
       <h4><%= product.name %></h4>
