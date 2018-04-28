@@ -1,0 +1,10 @@
+  <div>
+     <%=  order.email %>
+  </div>
+<%= order.allItems.each do |item| %>
+<%= item.prodName%>
+  <div>   
+     <%=  item.product_id %> | Quantity <%=  item.quantity %>
+  </div>
+
+  <%end %>
