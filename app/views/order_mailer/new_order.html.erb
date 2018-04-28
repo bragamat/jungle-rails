@@ -1,0 +1,8 @@
+<h1>Your order!</h1>
+<h2>The order<%= @order.id %> was made!</h2>
+<%= %>
+<h3>Your total was: <%= @order.total_cents%></h3>
+
+to See your order, click the link bellow
+
+<%= link_to "Order page", @order%>
